@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AnimeSolo - Топовые аниме</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        header {
+            background-color: #2c2c2c;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .anime-card {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .anime-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .anime-info {
+            padding: 1rem;
+        }
+
+        .anime-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #ff6b6b;
+        }
+
+        .anime-rating {
+            color: #ffd700;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AnimeSolo</h1>
+        <p>Лучшие аниме всех времен</p>
+    </header>
+
+    <div class="container">
+        <div class="anime-grid">
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">Attack on Titan</h3>
+                    <p class="anime-rating">Рейтинг: 9.0</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/9/9453.jpg" alt="Death Note" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">Death Note</h3>
+                    <p class="anime-rating">Рейтинг: 8.9</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">Fullmetal Alchemist: Brotherhood</h3>
+                    <p class="anime-rating">Рейтинг: 9.1</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/12/76049.jpg" alt="One Punch Man" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">One Punch Man</h3>
+                    <p class="anime-rating">Рейтинг: 8.8</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">Demon Slayer</h3>
+                    <p class="anime-rating">Рейтинг: 8.9</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/10/78745.jpg" alt="My Hero Academia" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">My Hero Academia</h3>
+                    <p class="anime-rating">Рейтинг: 8.7</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg" alt="Jujutsu Kaisen" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">Jujutsu Kaisen</h3>
+                    <p class="anime-rating">Рейтинг: 8.8</p>
+                </div>
+            </div>
+
+            <div class="anime-card">
+                <img src="https://cdn.myanimelist.net/images/anime/5/64449.jpg" alt="Tokyo Ghoul" class="anime-image">
+                <div class="anime-info">
+                    <h3 class="anime-title">Tokyo Ghoul</h3>
+                    <p class="anime-rating">Рейтинг: 8.5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
